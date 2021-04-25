@@ -24,7 +24,7 @@ def loginPage(request):
         else:
             messages.info(request,"Username or password is incorrect.")
     
-    return render(request, 'agenda/login.html')
+    return render(request, 'agenda\login.html')
 
 def logoutUser(request):
     logout(request)
