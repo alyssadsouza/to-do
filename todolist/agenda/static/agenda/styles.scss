@@ -37,8 +37,7 @@ body {
 }
 
 div {
-    margin:20px;
-    padding:5px;
+    margin:20px 0;
     position:relative;
 }
 
@@ -180,6 +179,34 @@ nav {
 }
 
 #tasks-header {
+    text-align: center;
     color:$accent1;
-    margin:100px 0 0 20px;
+    margin:20px 0 0 0px;
+}
+
+.username {
+    background-color: darken($bkgd,5%);
+    color:$accent1;
+    padding:5px;
+    h1 {
+        font-size: 60px;
+        text-align: center;
+        text-transform: uppercase;
+    }
+}
+
+.list-tasks {
+    padding:20px 50px;
+    /* background-color:lighten($bkgd,8%); */
+    width:400px;
+    font-size: 20px 0;
+    left:50%;
+    transform: translate(-50%);
+}
+
+.add-task {
+    display:block;
+    position:relative;
+    top:30px;
+    margin:0;
 }

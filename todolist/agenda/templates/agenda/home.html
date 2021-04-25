@@ -13,14 +13,21 @@
     <div class='username'>
         <h1>{{username}}</h1>
     </div>
-    <h1 id='tasks-header'>Tasks</h1>
+    
     <div class='list-tasks'>
+        <h1 id='tasks-header'>Tasks</h1>
         <ul>
             {% for i in tasks %}
                 <li>{{i}}</li>
             {% empty %}
                 <li>You don't have any tasks yet.</li>
             {% endfor %}
+            <form class='add-task' method='POST' action=''>
+                {% csrf_token %}
+                <input type='hidden' name='tasks' value="{{tasks}}">
+                <li><input type='text' name='task' placeholder="Add task"></li>
+                <input class='add-button' type='submit' value='Add' name='Add Task'>
+            </form>
         </ul>
     </div> 
 </div>
