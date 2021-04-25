@@ -185,7 +185,6 @@ nav {
 }
 
 .username {
-    background-color: darken($bkgd,5%);
     color:$accent1;
     padding:5px;
     h1 {
@@ -197,7 +196,7 @@ nav {
 
 .list-tasks {
     padding:20px 50px;
-    /* background-color:lighten($bkgd,8%); */
+    background-color:lighten($bkgd,8%);
     width:400px;
     font-size: 20px 0;
     left:50%;

@@ -190,7 +190,6 @@ nav span {
 }
 
 .username {
-  background-color: #efe5bf;
   color: #e46837;
   padding: 5px;
 }
@@ -203,7 +202,7 @@ nav span {
 
 .list-tasks {
   padding: 20px 50px;
-  /* background-color:lighten($bkgd,8%); */
+  background-color: #fcfaf4;
   width: 400px;
   font-size: 20px 0;
   left: 50%;
