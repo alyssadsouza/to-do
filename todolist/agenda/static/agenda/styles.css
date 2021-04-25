@@ -216,4 +216,57 @@ nav span {
   top: 30px;
   margin: 0;
 }
+
+.add-task-input {
+  border-width: 0;
+  margin: 0;
+  padding: 0;
+  background-color: transparent;
+  font-size: 16px;
+  font-family: "Noto Sans", sans-serif;
+  height: 30px;
+}
+
+::-webkit-input-placeholder {
+  font-family: "Noto Sans", sans-serif;
+  font-size: 16px;
+  color: #8c8c8c;
+}
+
+:-ms-input-placeholder {
+  font-family: "Noto Sans", sans-serif;
+  font-size: 16px;
+  color: #8c8c8c;
+}
+
+::-ms-input-placeholder {
+  font-family: "Noto Sans", sans-serif;
+  font-size: 16px;
+  color: #8c8c8c;
+}
+
+::placeholder {
+  font-family: "Noto Sans", sans-serif;
+  font-size: 16px;
+  color: #8c8c8c;
+}
+
+.add-button {
+  background: transparent;
+  border: 0px solid #e46837;
+  color: transparent;
+}
+
+.task-btn {
+  visibility: hidden;
+  position: absolute;
+  cursor: pointer;
+  width: 100px;
+  height: 20px;
+}
+
+.task-btn:checked + label {
+  -webkit-text-decoration: line-through solid #0c0c0c;
+          text-decoration: line-through solid #0c0c0c;
+}
 /*# sourceMappingURL=styles.css.map */
