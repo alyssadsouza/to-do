@@ -1,0 +1,30 @@
+{% extends "blog/layout.html" %}
+{% load static %}
+
+{% block title %}
+    To-Do List
+{% endblock %}
+
+{% block body %}
+<div class='page'>
+    <div class='bkgd-img'>
+        <img src="{% static 'blog/bkgd.png' %}" width='1590px'>
+    </div>
+    <nav>
+        <span><a href="{% url 'logout' %}">Log Out</a></span>
+    </nav> 
+    <div class='username'>
+        <h1>{{username}}</h1>
+    </div>
+    <h1 id='tasks-header'>Tasks</h1>
+    <div class='list-tasks'>
+        <ul>
+            {% for i in tasks %}
+                <li>{{i}}</li>
+            {% empty %}
+                <li>You don't have any tasks yet.</li>
+            {% endfor %}
+        </ul>
+    </div> 
+</div>
+{% endblock %}
